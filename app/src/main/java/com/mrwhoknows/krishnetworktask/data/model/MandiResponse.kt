@@ -9,7 +9,7 @@ data class MandiResponse(
     @Json(name = "code")
     val code: Int,
     @Json(name = "data")
-    val `data`: Data,
+    val body: Data,
     @Json(name = "status")
     val status: String
 ) {

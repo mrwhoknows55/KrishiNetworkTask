@@ -1,4 +1,4 @@
-package com.mrwhoknows.krishnetworktask
+package com.mrwhoknows.krishnetworktask.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

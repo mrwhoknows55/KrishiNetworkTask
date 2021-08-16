@@ -17,8 +17,9 @@ class MandiActivity : AppCompatActivity() {
         binding = ActivityMandiBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel.mandies.observe(this) {
-            println(it)
+        viewModel.mandies.observe(this) { result ->
+            println(result.data)
+            println(result.error)
         }
     }
 }

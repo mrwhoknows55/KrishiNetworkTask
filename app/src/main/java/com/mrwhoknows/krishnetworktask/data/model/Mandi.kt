@@ -1,8 +1,11 @@
 package com.mrwhoknows.krishnetworktask.data.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
+@Entity(tableName = "mandi")
 @JsonClass(generateAdapter = true)
 data class Mandi(
     @Json(name = "crop_id")
@@ -13,6 +16,7 @@ data class Mandi(
     val districtId: Int,
     @Json(name = "hindi_name")
     val hindiName: String,
+    @PrimaryKey
     @Json(name = "id")
     val id: Int,
     @Json(name = "image")

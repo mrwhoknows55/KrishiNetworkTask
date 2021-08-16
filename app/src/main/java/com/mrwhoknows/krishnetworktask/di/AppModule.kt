@@ -1,7 +1,10 @@
 package com.mrwhoknows.krishnetworktask.di
 
+import android.app.Application
+import androidx.room.Room
 import com.mrwhoknows.krishnetworktask.api.MandiApi
 import com.mrwhoknows.krishnetworktask.api.MandiApi.Companion.BASE_URL
+import com.mrwhoknows.krishnetworktask.data.database.MandiDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -9,7 +12,6 @@ import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
-
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -27,5 +29,9 @@ object AppModule {
     @Singleton
     fun provideMandiApi(retrofit: Retrofit): MandiApi = retrofit.create(MandiApi::class.java)
 
+    @Provides
+    @Singleton
+    fun provideDatabase(app: Application): MandiDatabase =
+        Room.databaseBuilder(app, MandiDatabase::class.java, "mandi_database").build()
 
 }

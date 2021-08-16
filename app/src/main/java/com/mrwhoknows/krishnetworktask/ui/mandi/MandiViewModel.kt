@@ -1,4 +1,4 @@
-package com.mrwhoknows.krishnetworktask.ui
+package com.mrwhoknows.krishnetworktask.ui.mandi
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData

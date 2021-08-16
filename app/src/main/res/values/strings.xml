@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Krish Network Task</string>
+    <string name="crop_image">Crop Image</string>
 </resources>

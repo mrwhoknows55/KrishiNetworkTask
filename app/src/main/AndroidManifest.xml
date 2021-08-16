@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KrishNetworkTask">
         <activity
-            android:name=".ui.MandiActivity"
+            android:name=".ui.mandi.MandiActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

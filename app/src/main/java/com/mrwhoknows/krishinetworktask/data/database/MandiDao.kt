@@ -1,10 +1,10 @@
-package com.mrwhoknows.krishnetworktask.data.database
+package com.mrwhoknows.krishinetworktask.data.database
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.mrwhoknows.krishnetworktask.data.model.Mandi
+import com.mrwhoknows.krishinetworktask.data.model.Mandi
 import kotlinx.coroutines.flow.Flow
 
 @Dao

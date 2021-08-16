@@ -1,9 +1,9 @@
-package com.mrwhoknows.krishnetworktask.data
+package com.mrwhoknows.krishinetworktask.data
 
 import androidx.room.withTransaction
-import com.mrwhoknows.krishnetworktask.api.MandiApi
-import com.mrwhoknows.krishnetworktask.data.database.MandiDatabase
-import com.mrwhoknows.krishnetworktask.util.networkBoundResource
+import com.mrwhoknows.krishinetworktask.api.MandiApi
+import com.mrwhoknows.krishinetworktask.data.database.MandiDatabase
+import com.mrwhoknows.krishinetworktask.util.networkBoundResource
 import kotlinx.coroutines.delay
 import javax.inject.Inject
 

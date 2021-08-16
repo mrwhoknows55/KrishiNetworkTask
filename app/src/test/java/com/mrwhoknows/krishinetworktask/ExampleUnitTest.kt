@@ -1,4 +1,4 @@
-package com.mrwhoknows.krishnetworktask
+package com.mrwhoknows.krishinetworktask
 
 import org.junit.Test
 

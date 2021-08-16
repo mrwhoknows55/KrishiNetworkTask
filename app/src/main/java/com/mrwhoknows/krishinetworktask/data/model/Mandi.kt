@@ -1,4 +1,4 @@
-package com.mrwhoknows.krishnetworktask.data.model
+package com.mrwhoknows.krishinetworktask.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

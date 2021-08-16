@@ -1,6 +1,6 @@
-package com.mrwhoknows.krishnetworktask.api
+package com.mrwhoknows.krishinetworktask.api
 
-import com.mrwhoknows.krishnetworktask.data.model.MandiResponse
+import com.mrwhoknows.krishinetworktask.data.model.MandiResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

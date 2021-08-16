@@ -1,4 +1,4 @@
-package com.mrwhoknows.krishnetworktask.data.model
+package com.mrwhoknows.krishinetworktask.data.model
 
 
 import com.squareup.moshi.Json

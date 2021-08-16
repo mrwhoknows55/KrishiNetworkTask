@@ -1,4 +1,4 @@
-package com.mrwhoknows.krishnetworktask.ui.mandi
+package com.mrwhoknows.krishinetworktask.ui.mandi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
-import com.mrwhoknows.krishnetworktask.databinding.ActivityMandiBinding
-import com.mrwhoknows.krishnetworktask.util.Resource
+import com.mrwhoknows.krishinetworktask.databinding.ActivityMandiBinding
+import com.mrwhoknows.krishinetworktask.util.Resource
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

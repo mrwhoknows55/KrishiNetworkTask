@@ -1,4 +1,4 @@
-package com.mrwhoknows.krishnetworktask.util
+package com.mrwhoknows.krishinetworktask.util
 
 import kotlinx.coroutines.flow.*
 

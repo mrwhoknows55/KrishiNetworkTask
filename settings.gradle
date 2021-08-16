@@ -3,8 +3,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-         // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "Krish Network Task"
+rootProject.name = "Krishi Network Task"
 include ':app'

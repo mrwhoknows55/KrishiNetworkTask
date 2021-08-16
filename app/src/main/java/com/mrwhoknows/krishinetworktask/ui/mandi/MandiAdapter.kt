@@ -1,4 +1,4 @@
-package com.mrwhoknows.krishnetworktask.ui.mandi
+package com.mrwhoknows.krishinetworktask.ui.mandi
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.mrwhoknows.krishnetworktask.data.model.Mandi
-import com.mrwhoknows.krishnetworktask.databinding.MandiItemBinding
+import com.mrwhoknows.krishinetworktask.data.model.Mandi
+import com.mrwhoknows.krishinetworktask.databinding.MandiItemBinding
 
 class MandiAdapter : ListAdapter<Mandi, MandiAdapter.MandiViewHolder>(MandiComparator()) {
 

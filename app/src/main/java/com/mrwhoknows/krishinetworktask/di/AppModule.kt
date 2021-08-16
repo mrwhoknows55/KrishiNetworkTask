@@ -1,10 +1,10 @@
-package com.mrwhoknows.krishnetworktask.di
+package com.mrwhoknows.krishinetworktask.di
 
 import android.app.Application
 import androidx.room.Room
-import com.mrwhoknows.krishnetworktask.api.MandiApi
-import com.mrwhoknows.krishnetworktask.api.MandiApi.Companion.BASE_URL
-import com.mrwhoknows.krishnetworktask.data.database.MandiDatabase
+import com.mrwhoknows.krishinetworktask.api.MandiApi
+import com.mrwhoknows.krishinetworktask.api.MandiApi.Companion.BASE_URL
+import com.mrwhoknows.krishinetworktask.data.database.MandiDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

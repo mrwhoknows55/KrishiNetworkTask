@@ -2,4 +2,8 @@
     <string name="app_name">Krishi Network Task</string>
     <string name="crop_image">Crop Image</string>
     <string name="fetch_and_show_mandi">Fetch And Show Mandi</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="select_image">Select Image</string>
+    <string name="submit">Submit</string>
 </resources>

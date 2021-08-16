@@ -6,6 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeActivity">
 
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/name"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/email"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <Button
         android:id="@+id/fetchBtn"
         android:layout_width="0dp"
@@ -17,5 +63,51 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selectImgBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/select_image"
+        app:layout_constraintEnd_toEndOf="@+id/emailTextInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/emailTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="@+id/selectImgBtn"
+        app:layout_constraintStart_toStartOf="@+id/selectImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/selectImgBtn" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/submit_btn"
+        app:layout_constraintStart_toStartOf="@+id/submit_btn"
+        app:layout_constraintTop_toBottomOf="@+id/submit_btn"
+        tools:text="Name: Avadhut Tanugade\nEmail: avdhutt2@hotmail.com">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/fetchBtn"
+        app:layout_constraintEnd_toEndOf="@+id/resultTextView"
+        app:layout_constraintStart_toStartOf="@+id/resultTextView"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

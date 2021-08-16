@@ -1,6 +1,8 @@
 package com.mrwhoknows.krishinetworktask.di
 
 import android.app.Application
+import android.content.Context
+import android.content.SharedPreferences
 import androidx.room.Room
 import com.mrwhoknows.krishinetworktask.api.MandiApi
 import com.mrwhoknows.krishinetworktask.api.MandiApi.Companion.BASE_URL
@@ -16,6 +18,8 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
+
+    private const val HOME_PREFS = "HOME_PREFS"
 
     @Provides
     @Singleton
@@ -33,5 +37,11 @@ object AppModule {
     @Singleton
     fun provideDatabase(app: Application): MandiDatabase =
         Room.databaseBuilder(app, MandiDatabase::class.java, "mandi_database").build()
+
+    @Provides
+    @Singleton
+    fun provideHomePrefs(app: Application): SharedPreferences =
+        app.getSharedPreferences(HOME_PREFS, Context.MODE_PRIVATE)
+
 
 }

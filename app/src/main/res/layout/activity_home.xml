@@ -35,7 +35,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/email"
         app:endIconMode="clear_text"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/fetch_and_show_mandi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,9 +94,8 @@
         app:layout_constraintEnd_toEndOf="@+id/submit_btn"
         app:layout_constraintStart_toStartOf="@+id/submit_btn"
         app:layout_constraintTop_toBottomOf="@+id/submit_btn"
-        tools:text="Name: Avadhut Tanugade\nEmail: avdhutt2@hotmail.com">
+        tools:text="Name: Avadhut Tanugade\nEmail: avdhutt2@hotmail.com" />
 
-    </TextView>
 
     <ImageView
         android:id="@+id/imageView"
@@ -105,9 +104,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/fetchBtn"
-        app:layout_constraintEnd_toEndOf="@+id/resultTextView"
-        app:layout_constraintStart_toStartOf="@+id/resultTextView"
+        app:layout_constraintEnd_toEndOf="@+id/submit_btn"
+        app:layout_constraintStart_toStartOf="@+id/submit_btn"
         app:layout_constraintTop_toBottomOf="@+id/resultTextView"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:src="@mipmap/ic_launcher" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
